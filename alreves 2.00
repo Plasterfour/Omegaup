@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main(int argc, const char * argv[]) {
+	char *c=malloc(100*sizeof(char));
+	int i, a, b;
+	scanf("%d %d", &a , &b);
+	fflush(stdin);
+	scanf(" %[^\n]",c);
+	for (i = b; i>=a;i--) {
+		printf("%c",c[i]);
+	}
+	for (i=b+1; i<=strlen(c); i++){
+		printf("%c",c[i]);
+	}
+	return 0;
+}
